@@ -8,14 +8,11 @@ function Navbar() {
   function handleClick() { setShowNavButton(!showNavButton) }
 
   return (
-    <div className='w-screen h-[60px]  bg-gradient-to-r from-secure-blue to-cyan-500 z-10 fixed font-body'>
+    <div className='w-screen h-[60px] bg-gradient-to-r from-secure-blue to-cyan-500 z-10 fixed font-body'>
       <div className='flex justify-between items-center w-full h-full'>
 
-        <div className='flex items-center'>
-          <CubeIcon className='w-8 invert ml-4'></CubeIcon>
-
-          <h1 className='text-white text-3xl font-bold  sm:text-3xl'> OpenPasswd</h1>
-        </div>
+        <h1 className='flex flex-row text-white text-3xl font-bold  sm:text-3xl'><CubeIcon className='h-8 my-auto ml-4' />
+          OpenPasswd</h1>
         <div className='flex flex-row gap-1'>
           <button className='hidden md:flex cursor-pointer text-secure-blue font-bold bg-white border-white hover:bg-transparent hover:text-white border rounded-lg px-12 py-2 mr-2'>Login</button>
           <div className='md:hidden invert mr-6' onClick={handleClick}>
