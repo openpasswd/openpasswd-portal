@@ -12,8 +12,6 @@ import {
     KeyIcon
 } from '@heroicons/react/outline'
 
-import bgImg from '/security-image.jpg'
-
 function Info() {
     return (
         <div className='font-others'>
