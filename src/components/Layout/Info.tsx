@@ -1,13 +1,6 @@
-import React from 'react';
 
 import {
-    ShieldCheckIcon,
-    BeakerIcon,
-    ChartBarIcon,
     CodeIcon,
-    CogIcon,
-    CubeTransparentIcon,
-    CubeIcon,
     ServerIcon,
     KeyIcon
 } from '@heroicons/react/outline'

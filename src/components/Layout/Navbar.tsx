@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { MenuIcon, XIcon, CubeIcon } from '@heroicons/react/outline'
 
 import githubImg from '/github-icon.png';
