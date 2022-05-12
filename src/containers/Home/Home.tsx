@@ -15,16 +15,15 @@ import {
 
 function Home() {
   return (
-    <div className="font-body font-semibold">
-      <h1 className="flex justify-center items-center text-3xl md:text-4xl text-slate-500 
-      bg-blue-white mb-10">
-        <ShieldExclamationIcon className='h-8 mr-1 text-red-400' />
-        Why trust in OpenPasswd?</h1>
-
-      <div className="flex justify-center mt-14 mb-[80px] md:mb-2">
-        <div className="grid gap-x-[1.5rem] gap-y-4 grid-row-3 md:grid-cols-3  text-white">
-
-          <div className='bg-sky-600 h-72 w-72 rounded-lg drop-shadow-lg'>
+    <div className="font-body font-semibold mt-16">
+      <div className='flex flex-col md:flex-row justify-center items-center'>
+        <ShieldExclamationIcon className='hidden md:flex h-10 pb-1 mr-2 text-red-400' />
+        <h1 className="text-3xl md:text-4xl text-red-400 md:text-slate-500 bg-blue-white">
+          Why trust in OpenPasswd? </h1>
+      </div>
+      <div className="flex flex-col justify-center mt-8 mb-16 md:mb-0">
+        <div className="m-auto grid gap-x-[1.5rem] gap-y-4 grid-row-3 md:grid-cols-3  text-white">
+          <div className='bg-sky-500 h-72 w-72 rounded-lg drop-shadow-lg'>
             <h1 className='flex justify-center md:text-2xl text-3xl mt-2'>
               You can't see me</h1>
             <h2 className='text-slate-200  flex justify-center md:text-1xl pl-2 pr-2'>Your password is encrypted </h2>
@@ -44,7 +43,7 @@ function Home() {
             </div>
           </div>
 
-          <div className='bg-sky-400 h-72 w-72 rounded-lg drop-shadow-lg'>
+          <div className='bg-sky-500 h-72 w-72 rounded-lg drop-shadow-lg'>
             <h1 className='flex justify-center md:text-2xl text-3xl mt-2'>
               What's happening?</h1>
             <h2 className='text-slate-200 flex justify-center text-1xl pl-2 pr-2'>View and edit the source code :)</h2>
@@ -54,6 +53,9 @@ function Home() {
             </div>
           </div>
         </div>
+        <div className="md:hidden flex justify-center mt-4 font-body text-slate-400">©2022 Copyright - OpenPasswd</div>
+        <div className="hidden md:flex my-9 justify-center font-body text-slate-400">©2022 Copyright - OpenPasswd</div>
+
       </div>
     </div >
   )
