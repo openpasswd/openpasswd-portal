@@ -3,7 +3,6 @@ import { MenuIcon, XIcon, CubeIcon } from '@heroicons/react/outline'
 
 import githubImg from '/github-icon.png';
 import { Link } from 'react-router-dom';
-// import inBuildWarn from '/inbuild.png'
 
 function Navbar() {
   const [showNavButton, setShowNavButton] = useState(false);
@@ -11,9 +10,6 @@ function Navbar() {
 
   return (
     <div className='w-screen h-[60px] bg-gradient-to-r from-secure-blue to-cyan-500 z-10 fixed font-body'>
-      {/* <div> remove in the end 
-        <img className='hidden lg:block object-cover absolute pl-[42rem] h-[420px]' src={inBuildWarn}></img>
-      </div> */}
       <div className='flex justify-between items-center w-full h-full'>
         <h1 className='flex flex-row gap-1 text-white text-3xl font-bold  sm:text-3xl'><CubeIcon className='h-8 my-auto ml-4' />
           OpenPasswd</h1>
