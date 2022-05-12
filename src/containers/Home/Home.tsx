@@ -28,8 +28,8 @@ function Home() {
               You can't see me</h1>
             <h2 className='text-slate-200  flex justify-center md:text-1xl pl-2 pr-2'>Your password is encrypted </h2>
             <div className='flex flex-col'>
-              <DocumentTextIcon className='h-[180px]' />
-              <EyeOffIcon className='h-[30px]  animate-pulse' />
+              <DocumentTextIcon className='h-44' />
+              <EyeOffIcon className='h-8  animate-pulse' />
             </div>
           </div>
 
@@ -38,8 +38,8 @@ function Home() {
               It's all yours!</h1>
             <h2 className='text-slate-200 flex justify-center md:text-1xl pl-2 pr-2'>You can deploy anyware you trust!</h2>
             <div className='flex flex-col'>
-              <CloudIcon className='h-[180px]' />
-              <ChevronDoubleUpIcon className='h-[30px] animate-bounce' />
+              <CloudIcon className='h-44' />
+              <ChevronDoubleUpIcon className='h-8 animate-bounce' />
             </div>
           </div>
 
@@ -48,8 +48,8 @@ function Home() {
               What's happening?</h1>
             <h2 className='text-slate-200 flex justify-center text-1xl pl-2 pr-2'>View and edit the source code :)</h2>
             <div className='flex flex-col'>
-              <TerminalIcon className='h-[180px]' />
-              <PencilIcon className='h-[30px] animate-wiggle' />
+              <TerminalIcon className='h-44' />
+              <PencilIcon className='h-8 animate-wiggle' />
             </div>
           </div>
         </div>
