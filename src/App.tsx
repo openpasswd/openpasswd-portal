@@ -1,7 +1,8 @@
 import React from 'react';
 import Navbar from './components/Layout/Navbar';
-// import Home from './containers/Home/Home';
-import Info from './components/Layout/Info';
+import Info from './components/Layout/Intro';
+import Home from './containers/Home/Home';
+import End from './components/Layout/End';
 
 class App extends React.Component {
   render() {
@@ -9,6 +10,8 @@ class App extends React.Component {
       <>
         <Navbar />
         <Info />
+        <Home />
+        <End />
       </>
     );
   }

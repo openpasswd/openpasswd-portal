@@ -1,51 +1,62 @@
+/* eslint-disable react/no-unescaped-entities */
+import {
+  DocumentTextIcon,
+  CloudIcon,
+  TerminalIcon
+} from '@heroicons/react/outline'
 
-class Home extends React.Component {
-  render() {
-    return (
-      <div></div>
-      // <main className="bg-secure-blue text-white flex-grow font-body">
-      //   <div className="text-center">
-      //     <h1 className="font-bold text-6xl pt-20">
-      //       OpenPasswd
-      //     </h1>
-      //     <h2 className="text-3xl pt-1 text-indigo-100">
-      //       <a className='semi-bold text-white'>Secure </a>and <a className='semi-bold text-white'>Open-Source </a>
-      //       password manager!
-      //     </h2>
-      //     <div className="text-1xl pt-3 text-indigo-200">
-      //       🛠️ It's under construction, if you want to store your passwords safely
-      //       this might be what you are looking for.
-      //     </div>
-      //   </div>
+import {
+  ShieldExclamationIcon,
+  EyeOffIcon,
+  ChevronDoubleUpIcon,
+  PencilIcon
+} from '@heroicons/react/solid'
 
 
+function Home() {
+  return (
+    <div className="font-body font-semibold">
+      <h1 className="flex justify-center items-center text-3xl md:text-4xl text-slate-500 
+      bg-blue-white mb-10">
+        <ShieldExclamationIcon className='h-8 mr-1 text-red-400' />
+        Why trust in OpenPasswd?</h1>
 
-      //   {/* <div className="text-center pt-10 md:pt-20 grid grid-cols-1 md:grid-cols-3">
-      //     <div className="px-2 py-6">
-      //       <div className=" text-3xl font-bold">Encrypted</div>
-      //       <div className="pt-4 text-xl font-bold">
-      //         Your password is encrypted
-      //       </div>
-      //     </div>
-      //     <div className="px-2 py-6">
-      //       <div className=" text-3xl font-bold">Self Hosted</div>
-      //       <div className="pt-4 text-xl font-bold">
-      //         You don't trust anyone with your passwords? You can use it
-      //         localhost or deploy anyware you truste!
-      //       </div>
-      //     </div>
-      //     <div className="px-2 py-6">
-      //       <div className=" text-3xl font-bold">Open Source</div>
-      //       <div className="pt-4 text-xl font-bold">
-      //         The full source code is published under the terms of the GNU
-      //         General Public License and made available on GitHub. Use, inspect,
-      //         change, and share at will; contributions by everyone are welcome.
-      //       </div>
-      //     </div>
-      //   </div> */}
-      // </main>
-    );
-  }
+      <div className="flex justify-center mt-14 mb-[80px] md:mb-2">
+        <div className="grid gap-x-[1.5rem] gap-y-4 grid-row-3 md:grid-cols-3  text-white">
+
+          <div className='bg-sky-600 h-72 w-72 rounded-lg drop-shadow-lg'>
+            <h1 className='flex justify-center md:text-2xl text-3xl mt-2'>
+              You can't see me</h1>
+            <h2 className='text-slate-200  flex justify-center md:text-1xl pl-2 pr-2'>Your password is encrypted </h2>
+            <div className='flex flex-col'>
+              <DocumentTextIcon className='h-[180px]' />
+              <EyeOffIcon className='h-[30px]  animate-pulse' />
+            </div>
+          </div>
+
+          <div className='bg-sky-500 h-72 w-72 rounded-lg drop-shadow-lg'>
+            <h1 className='flex justify-center md:text-2xl text-3xl mt-2'>
+              It's all yours!</h1>
+            <h2 className='text-slate-200 flex justify-center md:text-1xl pl-2 pr-2'>You can deploy anyware you trust!</h2>
+            <div className='flex flex-col'>
+              <CloudIcon className='h-[180px]' />
+              <ChevronDoubleUpIcon className='h-[30px] animate-bounce' />
+            </div>
+          </div>
+
+          <div className='bg-sky-400 h-72 w-72 rounded-lg drop-shadow-lg'>
+            <h1 className='flex justify-center md:text-2xl text-3xl mt-2'>
+              What's happening?</h1>
+            <h2 className='text-slate-200 flex justify-center text-1xl pl-2 pr-2'>View and edit the source code :)</h2>
+            <div className='flex flex-col'>
+              <TerminalIcon className='h-[180px]' />
+              <PencilIcon className='h-[30px] animate-wiggle' />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div >
+  )
 }
 
 export default Home;
